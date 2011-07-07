@@ -16,4 +16,10 @@ public class TestCalculateTax {
     {
         Assert.assertEquals(10.0, new Item().calculateCostAfterTax("book", 1, 10.0));
     }
+
+    @Test
+    public void costOfBookWithPriceFifteenIsFifteen() throws Exception
+    {
+        Assert.assertEquals(15.0, new Item().calculateCostAfterTax("book",1,15.0));
+    }
 }
