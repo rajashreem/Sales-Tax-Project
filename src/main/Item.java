@@ -9,11 +9,12 @@ import java.io.DataOutput;
  * Time: 2:35 PM
  * To change this template use File | Settings | File Templates.
  */
+
 public class Item {
     public double calculateCostAfterTax(String itemName, int quantity, double price )
     {
         double tax = 0.0;
-        double cost=0.0;
+        double cost = 0.0;
 
         cost = price * quantity;
 
