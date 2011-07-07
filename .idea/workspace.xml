@@ -15,7 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d73098e9-c0a9-4a38-9fd1-94523b487914" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Item.java" afterPath="$PROJECT_DIR$/src/main/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestCalculateTax.java" afterPath="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
     </list>
@@ -79,7 +78,7 @@
       <file leaf-file-name="Item.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="300" selection-end="300" vertical-scroll-proportion="0.5284974">
+            <state line="12" column="28" selection-start="308" selection-end="308" vertical-scroll-proportion="0.5284974">
               <folding />
             </state>
           </provider>
@@ -88,7 +87,7 @@
       <file leaf-file-name="TestCalculateTax.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="113" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+            <state line="28" column="75" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -525,7 +524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="113" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+        <state line="28" column="75" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -534,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="300" selection-end="300" vertical-scroll-proportion="0.5284974">
+        <state line="12" column="28" selection-start="308" selection-end="308" vertical-scroll-proportion="0.5284974">
           <folding />
         </state>
       </provider>

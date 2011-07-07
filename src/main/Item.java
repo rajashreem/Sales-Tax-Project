@@ -10,6 +10,6 @@ package main;
 public class Item {
     public double calculateCostAfterTax(String itemname, int quantity, double price )
     {
-        return price;
+        return price*(double)quantity;
     }
 }

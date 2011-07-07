@@ -22,4 +22,10 @@ public class TestCalculateTax {
     {
         Assert.assertEquals(15.0, new Item().calculateCostAfterTax("book",1,15.0));
     }
+
+    @Test
+    public void costOfTwoBooksWithPriceFifteenIsThirty() throws Exception
+    {
+        Assert.assertEquals(30.0, new Item().calculateCostAfterTax("book",2,15.0));
+    }
 }
