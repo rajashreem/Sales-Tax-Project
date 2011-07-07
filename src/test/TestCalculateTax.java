@@ -32,9 +32,63 @@ public class TestCalculateTax {
     }
 
     @Test
-    public void costOfBookWithPriceTwelvePonitFourtyNineIsThirty() throws Exception
+    public void costOfBookWithPriceTwelvePointFortyNineIsThirty() throws Exception
     {
         Assert.assertEquals(12.49, calculateTotalCostOfItem("book",1,12.49));
+    }
+
+    @Test
+    public void costOfChocolateWithPricePointEightyFiveIsPointEightyFive() throws Exception
+    {
+        assertEquals(0.85,calculateTotalCostOfItem("chocolate",1,0.85));
+    }
+
+    @Test
+    public void costOfMusicCdWithPriceFourteenPointNinetyNineIsSixteenPointFortyNine() throws Exception
+    {
+        assertEquals(16.489,calculateTotalCostOfItem("music_CD",1,14.99));
+    }
+
+    @Test
+    public void costOfPerfumeWithPriceEighteenPointNinetyNineIsTwentyPointEightEightNine() throws Exception
+    {
+        assertEquals(20.889,calculateTotalCostOfItem("perfume",1,18.99));
+
+    }
+
+    @Test
+    public void costOfHeadachePillsWithPriceNinePointSeventyFiveIsNinePointSeventyFive() throws Exception
+    {
+        assertEquals(9.75,calculateTotalCostOfItem("headache_pills",1,9.75));
+
+    }
+
+    @Test
+    public void costOfImportedChocolateBarWithPriceTenIsTenPointFive() throws Exception
+    {
+        assertEquals(10.50,calculateTotalCostOfItem("imported_chocolate_bar",1,10.00));
+
+    }
+
+    @Test
+    public void costOfImportedMusicCDWithPriceHundredIsHundredAndFifteen() throws Exception
+    {
+        assertEquals(115.0,calculateTotalCostOfItem("imported_musicCD",1,100.00));
+
+    }
+
+    @Test
+    public void costOfTwoImportedMusicCDsWithPriceHundredIsTwuHundredAndThirty() throws Exception
+    {
+        assertEquals(230.0,calculateTotalCostOfItem("imported_musicCD",2,100.00));
+
+    }
+
+    @Test
+    public void costOfTwoImportedBooksWithPriceHundredIsTwuHundredAndTen() throws Exception
+    {
+        assertEquals(210.0,calculateTotalCostOfItem("imported_books",2,100.00));
+
     }
 
     private double calculateTotalCostOfItem(String book, int quantity, double price)

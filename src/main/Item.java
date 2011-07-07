@@ -1,5 +1,7 @@
 package main;
 
+import java.io.DataOutput;
+
 /**
  * Created by IntelliJ IDEA.
  * User: rajashre
@@ -8,8 +10,25 @@ package main;
  * To change this template use File | Settings | File Templates.
  */
 public class Item {
-    public double calculateCostAfterTax(String itemname, int quantity, double price )
+    public double calculateCostAfterTax(String itemName, int quantity, double price )
     {
-        return price*(double)quantity;
+        double tax = 0.0;
+        double cost=0.0;
+
+        cost = price * quantity;
+
+        if(itemName.contains("import"))
+        {
+              tax = 0.05 * price * (double)quantity;
+              cost += tax;
+        }
+        if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
+        {
+            tax = 0.1 * price * (double)quantity;
+            cost += tax;
+        }
+
+        return cost;
+
     }
 }
