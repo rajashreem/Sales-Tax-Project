@@ -14,6 +14,8 @@ import static junit.framework.Assert.assertEquals;
  * To change this template use File | Settings | File Templates.
  */
 public class TestRoundValueGenerator {
+
+    //Tests for roundToTwoDecimalPlaces
     @Test
     public void onePointFourNineNineAfterRoundingToTwoDecimalPlacesIsOnePointFourNine() throws Exception
     {
@@ -26,6 +28,8 @@ public class TestRoundValueGenerator {
         assertEquals(2.37,new RoundValueGenerator().roundToTwoDecimalPlaces(2.378));
     }
 
+
+    //tests for roundToNearestDecimalFive
     @Test
     public void twoPointThreeSevenFiveAfterRoundingIsTwoPointForty() throws Exception
     {
@@ -44,5 +48,21 @@ public class TestRoundValueGenerator {
         assertEquals(1.35,new RoundValueGenerator().roundToNearestDecimalFive(1.322));
     }
 
+    @Test
+    public void onePointEightNineNineAfterRoundingIsOnePointNineZero() throws Exception
+    {
+        assertEquals(1.90,new RoundValueGenerator().roundToNearestDecimalFive(1.899));
+    }
 
+    @Test
+    public void zeroPointFiveAfterRoundingIsZeroPointFive() throws Exception
+    {
+        assertEquals(0.5,new RoundValueGenerator().roundToNearestDecimalFive(0.5));
+    }
+
+    @Test
+    public void zeroPointFiveFiveAfterRoundingIsZeroPointFiveFive() throws Exception
+    {
+        assertEquals(0.55,new RoundValueGenerator().roundToNearestDecimalFive(0.55));
+    }
 }

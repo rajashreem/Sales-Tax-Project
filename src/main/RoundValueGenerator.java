@@ -17,13 +17,13 @@ public class RoundValueGenerator {
     {
         int temporaryNumber = (int)(roundToTwoDecimalPlaces(number)*100);
         int unitPlace = temporaryNumber % 10;
-        if (unitPlace > 5)
-        {
-            temporaryNumber += (10 - unitPlace);
-        }
-        else
+        if (unitPlace < 5 && unitPlace != 0)
         {
             temporaryNumber += (5 - unitPlace);
+        }
+        if(unitPlace > 5)
+        {
+            temporaryNumber += (10 - unitPlace);
         }
         double finalRoundedValue = temporaryNumber /100.0;
         return finalRoundedValue;

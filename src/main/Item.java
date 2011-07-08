@@ -15,21 +15,27 @@ public class Item {
     {
         double tax = 0.0;
         double cost = 0.0;
+        RoundValueGenerator rounder = new RoundValueGenerator();
 
         cost = price * quantity;
 
         if(itemName.contains("import"))
         {
-              tax = 0.05 * price * (double)quantity;
-              cost += tax;
+          tax = 0.05 * price * quantity;
+          tax = rounder.roundToNearestDecimalFive(tax);
+          cost += tax;
         }
+
         if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
         {
-            tax = 0.1 * price * (double)quantity;
+            tax = 0.1 * price * quantity;
+            tax = rounder.roundToNearestDecimalFive(tax);
             cost += tax;
         }
 
+        cost = rounder.roundToTwoDecimalPlaces(cost);
         return cost;
+
 
     }
 }
