@@ -2,7 +2,7 @@ package test;
 
 import main.RoundValueGenerator;
 import org.testng.annotations.Test;
-import junit.framework.Assert;
+
 import static junit.framework.Assert.assertEquals;
 
 
@@ -19,50 +19,60 @@ public class TestRoundValueGenerator {
     @Test
     public void onePointFourNineNineAfterRoundingToTwoDecimalPlacesIsOnePointFourNine() throws Exception
     {
-        assertEquals(1.49,new RoundValueGenerator().roundToTwoDecimalPlaces(1.499));
+        assertEquals(1.49, roundToTwoDecimalPlaces(1.499));
     }
 
     @Test
     public void twoPointThreeSevenEightAfterRoundingToTwoDecimalPlacesIsTwoPointThreeSeven() throws Exception
     {
-        assertEquals(2.37,new RoundValueGenerator().roundToTwoDecimalPlaces(2.378));
+        assertEquals(2.37,roundToTwoDecimalPlaces(2.378));
+    }
+
+    private double roundToTwoDecimalPlaces(double numberToRound)
+    {
+        return new RoundValueGenerator().roundToTwoDecimalPlaces(numberToRound);
     }
 
 
-    //tests for roundToNearestDecimalFive
+
+    //tests for roundToNearestPointZeroFive
     @Test
     public void twoPointThreeSevenFiveAfterRoundingIsTwoPointForty() throws Exception
     {
-        assertEquals(2.40,new RoundValueGenerator().roundToNearestDecimalFive(2.375));
+        assertEquals(2.40, roundToNearestPointZeroFive(2.375));
+    }
+
+    private double roundToNearestPointZeroFive(double numberForRounding) {
+        return new RoundValueGenerator().roundToNearestDecimalFive(numberForRounding);
     }
 
     @Test
     public void onePointNineNineAfterRoundingIsTwoPointZeroZero() throws Exception
     {
-        assertEquals(2.00,new RoundValueGenerator().roundToNearestDecimalFive(1.99));
+        assertEquals(2.00,roundToNearestPointZeroFive(1.99));
     }
 
     @Test
     public void onePointThreeTwoTwoAfterRoundingIsOnePointThirtyFive() throws Exception
     {
-        assertEquals(1.35,new RoundValueGenerator().roundToNearestDecimalFive(1.322));
+        assertEquals(1.35,roundToNearestPointZeroFive(1.322));
     }
 
     @Test
     public void onePointEightNineNineAfterRoundingIsOnePointNineZero() throws Exception
     {
-        assertEquals(1.90,new RoundValueGenerator().roundToNearestDecimalFive(1.899));
+        assertEquals(1.90,roundToNearestPointZeroFive(1.899));
     }
 
     @Test
     public void zeroPointFiveAfterRoundingIsZeroPointFive() throws Exception
     {
-        assertEquals(0.5,new RoundValueGenerator().roundToNearestDecimalFive(0.5));
+        assertEquals(0.5,roundToNearestPointZeroFive(0.5));
     }
 
     @Test
     public void zeroPointFiveFiveAfterRoundingIsZeroPointFiveFive() throws Exception
     {
-        assertEquals(0.55,new RoundValueGenerator().roundToNearestDecimalFive(0.55));
+        assertEquals(0.55,roundToNearestPointZeroFive(0.55));
     }
 }
