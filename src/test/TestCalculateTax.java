@@ -49,12 +49,12 @@ public class TestCalculateTax {
         assertEquals(16.49,calculateTotalCostOfItem("music_CD",1,14.99));
     }
 
-//    @Test
-//    public void costOfPerfumeWithPriceEighteenPointNinetyNineIsTwentyPointEightNine() throws Exception
-//    {
-//        assertEquals(20.89,calculateTotalCostOfItem("perfume",1,18.99));
-//
-//    }
+    @Test
+    public void costOfPerfumeWithPriceEighteenPointNinetyNineIsTwentyPointEightNine() throws Exception
+    {
+        assertEquals(20.89,calculateTotalCostOfItem("perfume",1,18.99));
+
+    }
 
     @Test
     public void costOfHeadachePillsWithPriceNinePointSeventyFiveIsNinePointSeventyFive() throws Exception

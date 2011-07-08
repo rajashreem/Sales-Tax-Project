@@ -14,6 +14,7 @@ public class Item {
     public double calculateCostAfterTax(String itemName, int quantity, double price )
     {
         double tax = 0.0;
+        double roundedTax = 0.0;
         double cost = 0.0;
         RoundValueGenerator rounder = new RoundValueGenerator();
 
@@ -22,15 +23,16 @@ public class Item {
         if(itemName.contains("import"))
         {
           tax = 0.05 * price * quantity;
-          tax = rounder.roundToNearestDecimalFive(tax);
-          cost += tax;
+          roundedTax = rounder.roundToNearestDecimalFive(tax);
+          cost += roundedTax;
+          tax = 0.0;
         }
 
         if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
         {
             tax = 0.1 * price * quantity;
-            tax = rounder.roundToNearestDecimalFive(tax);
-            cost += tax;
+            roundedTax = rounder.roundToNearestDecimalFive(tax);
+            cost += roundedTax;
         }
 
         cost = rounder.roundToTwoDecimalPlaces(cost);
