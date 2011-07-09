@@ -8,7 +8,7 @@ package main;
  * To change this template use File | Settings | File Templates.
  */
 public class ImportedOrNot {
-    public boolean isImported (String itemName)
+    public static boolean isImported (String itemName)
     {
         return itemName.contains("import");
     }

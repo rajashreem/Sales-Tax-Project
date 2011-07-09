@@ -20,9 +20,7 @@ public class FileInputSplitter
     ReadFile reader = new ReadFile();
     private final ItemNameGenerator itemNameGenerator = new ItemNameGenerator();
     RoundValueGenerator rounder = new RoundValueGenerator();
-    ImportedOrNot importStatus = new ImportedOrNot();
     Item item;
-
 
     private double totalTaxOfAllItems = 0.0;
     private double totalCostOfAllItems = 0.0;
@@ -38,11 +36,9 @@ public class FileInputSplitter
             String itemName = itemNameGenerator.findItem(line);
             price = Double.parseDouble(result[result.length - 1]);
 
-           // System.out.println("\n"+itemName+ "\n "+ price+ "\n "+ quantity);
-
             if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
             {
-                isImported = importStatus.isImported(itemName);
+                isImported = ImportedOrNot.isImported(itemName);
                 item = new TaxableItem(itemName, price, quantity, isImported);
                 System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
                 totalTaxOfAllItems += item.calculateTax();
@@ -51,7 +47,7 @@ public class FileInputSplitter
             }
             else
             {
-                isImported = importStatus.isImported(itemName);
+                isImported = ImportedOrNot.isImported(itemName);
                 item = new NonTaxableItem(itemName, price, quantity, isImported);
                 System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
                 totalTaxOfAllItems += item.calculateTax();
@@ -61,11 +57,7 @@ public class FileInputSplitter
 
         System.out.println("total tax is :" + rounder.roundToTwoDecimalPlaces(totalTaxOfAllItems));
         System.out.println("total cost is :"+ rounder.roundToTwoDecimalPlaces(totalCostOfAllItems));
-
-
-
     }
-
 
     private String findItem(String line) {
         return itemNameGenerator.findItem(line);
