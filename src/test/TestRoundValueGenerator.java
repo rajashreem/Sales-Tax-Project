@@ -4,6 +4,7 @@ import main.RoundValueGenerator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -55,13 +56,13 @@ public class TestRoundValueGenerator {
     @Test
     public void onePointThreeTwoTwoAfterRoundingIsOnePointThirtyFive() throws Exception
     {
-        assertEquals(1.35,roundToNearestPointZeroFive(1.322));
+        assertThat(1.35,equalTo(roundToNearestPointZeroFive(1.322)));
     }
 
     @Test
     public void onePointEightNineNineAfterRoundingIsOnePointNineZero() throws Exception
     {
-        assertEquals(1.90,roundToNearestPointZeroFive(1.899));
+        assertThat(1.90,is(roundToNearestPointZeroFive(1.899)));
     }
 
     @Test
@@ -73,7 +74,7 @@ public class TestRoundValueGenerator {
     @Test
     public void zeroPointFiveFiveAfterRoundingIsZeroPointFiveFive() throws Exception
     {
-        assertEquals(0.55,roundToNearestPointZeroFive(0.55));
+        assertThat(0.55, equalTo(roundToNearestPointZeroFive(0.55)));
     }
 
     private double roundToNearestPointZeroFive(double numberForRounding)
