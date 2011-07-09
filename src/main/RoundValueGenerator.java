@@ -1,9 +1,5 @@
 package main;
 
-import sun.reflect.generics.tree.ReturnType;
-
-import java.io.DataOutput;
-import java.text.DecimalFormat;
 
 /**
  * Created by IntelliJ IDEA.
@@ -12,6 +8,7 @@ import java.text.DecimalFormat;
  * Time: 11:06 AM
  * To change this template use File | Settings | File Templates.
  */
+
 public class RoundValueGenerator {
     public double roundToNearestDecimalFive(Double number)
     {
@@ -27,13 +24,16 @@ public class RoundValueGenerator {
         }
         double finalRoundedValue = temporaryNumber /100.0;
         return finalRoundedValue;
-
     }
 
     public double roundToTwoDecimalPlaces(double numberToRound)
     {
-        int resultantInt = (int)(numberToRound * 100);
-        double resultantDouble = ((double )resultantInt)/100.0;
-        return resultantDouble;
+        //This method is already there in java
+        //int resultantInt = (int)(numberToRound * 100);
+        //double resultantDouble = ((double )resultantInt)/100.0;
+        //return resultantDouble;
+
+        double resultantValue = Double.parseDouble(String.format("%.2f",numberToRound));
+        return resultantValue;
     }
 }

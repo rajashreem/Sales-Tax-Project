@@ -32,7 +32,7 @@ public class TestCalculateTax {
     }
 
     @Test
-    public void costOfBookWithPriceTwelvePointFortyNineIsThirty() throws Exception
+    public void costOfBookWithPriceTwelvePointFortyNineIsTwelvePointFortyNine() throws Exception
     {
         Assert.assertEquals(12.49, calculateTotalCostOfItem("book",1,12.49));
     }
@@ -49,17 +49,24 @@ public class TestCalculateTax {
         assertEquals(16.49,calculateTotalCostOfItem("music_CD",1,14.99));
     }
 
-//    @Test
-//    public void costOfPerfumeWithPriceEighteenPointNinetyNineIsTwentyPointEightNine() throws Exception
-//    {
-//        assertEquals(20.89,calculateTotalCostOfItem("perfume",1,18.99));
-//
-//    }
+    @Test
+    public void costOfPerfumeWithPriceEighteenPointNinetyNineIsTwentyPointEightNine() throws Exception
+    {
+        assertEquals(20.89,calculateTotalCostOfItem("perfume",1,18.99));
+
+    }
 
     @Test
     public void costOfHeadachePillsWithPriceNinePointSeventyFiveIsNinePointSeventyFive() throws Exception
     {
         assertEquals(9.75,calculateTotalCostOfItem("headache_pills",1,9.75));
+
+    }
+
+    @Test
+    public void costOfImportedBottleOfPerfumeWithPriceFortySevenPointFiveZeroIsFiftyFourPointSixtyFive() throws Exception
+    {
+        assertEquals(54.65,calculateTotalCostOfItem("imported_perfume",1,47.5));
 
     }
 

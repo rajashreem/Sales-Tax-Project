@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="" scope="TEST">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://D:/assignment for me/junit-4.8.1.jar!/" />

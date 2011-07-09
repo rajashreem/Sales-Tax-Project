@@ -15,7 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d73098e9-c0a9-4a38-9fd1-94523b487914" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sales-Tax-project.iml" afterPath="$PROJECT_DIR$/Sales-Tax-project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Item.java" afterPath="$PROJECT_DIR$/src/main/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/RoundValueGenerator.java" afterPath="$PROJECT_DIR$/src/main/RoundValueGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestCalculateTax.java" afterPath="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" afterPath="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" />
     </list>
@@ -79,10 +83,8 @@
       <file leaf-file-name="TestCalculateTax.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="39" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="105" column="77" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,30 +92,35 @@
       <file leaf-file-name="RoundValueGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/RoundValueGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+            <state line="34" column="4" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRoundValueGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="66" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.04404145">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRoundValueGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="67" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.7512953">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="84" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,9 +143,10 @@
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/test/calculateTaxTest.java" />
         <option value="$PROJECT_DIR$/src/main/RoundValueGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
         <option value="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
       </list>
     </option>
   </component>
@@ -174,6 +182,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,8 +241,6 @@
         </subPane>
       </pane>
       <pane id="Favorites" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +258,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="TestNG.TestRoundValueGenerator">
+  <component name="RunManager" selected="TestNG.TestCalculateTax">
     <configuration default="false" name="SalesTaxTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="Sales-Tax-project" />
@@ -344,6 +352,28 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Application" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="main.Application" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Sales-Tax-project" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -358,25 +388,6 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -411,6 +422,25 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -467,10 +497,11 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SalesTaxTest" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.TestCalculateTax" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.TestRoundValueGenerator" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Application" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -590,37 +621,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+        <state line="84" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/RoundValueGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="4" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="66" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="39" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="105" column="77" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/RoundValueGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="67" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.7512953">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="5" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.04404145">
+          <folding />
         </state>
       </provider>
     </entry>

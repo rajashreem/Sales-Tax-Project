@@ -1,6 +1,7 @@
 package main;
 
-import java.io.DataOutput;
+
+import javax.management.loading.PrivateMLet;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,16 +16,20 @@ public class Item {
     {
         double tax = 0.0;
         double roundedTax = 0.0;
+        double totalTax = 0.0;
         double cost = 0.0;
         RoundValueGenerator rounder = new RoundValueGenerator();
 
         cost = price * quantity;
+        System.out.println("actual price:"+cost);
 
         if(itemName.contains("import"))
         {
           tax = 0.05 * price * quantity;
           roundedTax = rounder.roundToNearestDecimalFive(tax);
+          System.out.println("Tax because of import is:"+roundedTax);
           cost += roundedTax;
+          totalTax += roundedTax;
           tax = 0.0;
         }
 
@@ -32,12 +37,13 @@ public class Item {
         {
             tax = 0.1 * price * quantity;
             roundedTax = rounder.roundToNearestDecimalFive(tax);
+            System.out.println("Tax for non-exemptable:"+roundedTax);
+            totalTax += roundedTax;
             cost += roundedTax;
         }
 
+        System.out.println("Total tax is:" + rounder.roundToTwoDecimalPlaces(totalTax));
         cost = rounder.roundToTwoDecimalPlaces(cost);
         return cost;
-
-
     }
 }

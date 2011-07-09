@@ -1,7 +1,11 @@
 package test;
 
 import main.RoundValueGenerator;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -17,15 +21,15 @@ public class TestRoundValueGenerator {
 
     //Tests for roundToTwoDecimalPlaces
     @Test
-    public void onePointFourNineNineAfterRoundingToTwoDecimalPlacesIsOnePointFourNine() throws Exception
+    public void onePointFourNineNineAfterRoundingToTwoDecimalPlacesIsOnePointFiveZero() throws Exception
     {
-        assertEquals(1.49, roundToTwoDecimalPlaces(1.499));
+        assertEquals(1.50, roundToTwoDecimalPlaces(1.499));
     }
 
     @Test
-    public void twoPointThreeSevenEightAfterRoundingToTwoDecimalPlacesIsTwoPointThreeSeven() throws Exception
+    public void twoPointThreeSevenEightAfterRoundingToTwoDecimalPlacesIsTwoPointThreeEight() throws Exception
     {
-        assertEquals(2.37,roundToTwoDecimalPlaces(2.378));
+        assertEquals(2.38,roundToTwoDecimalPlaces(2.378));
     }
 
     private double roundToTwoDecimalPlaces(double numberToRound)
@@ -40,10 +44,6 @@ public class TestRoundValueGenerator {
     public void twoPointThreeSevenFiveAfterRoundingIsTwoPointForty() throws Exception
     {
         assertEquals(2.40, roundToNearestPointZeroFive(2.375));
-    }
-
-    private double roundToNearestPointZeroFive(double numberForRounding) {
-        return new RoundValueGenerator().roundToNearestDecimalFive(numberForRounding);
     }
 
     @Test
@@ -67,7 +67,7 @@ public class TestRoundValueGenerator {
     @Test
     public void zeroPointFiveAfterRoundingIsZeroPointFive() throws Exception
     {
-        assertEquals(0.5,roundToNearestPointZeroFive(0.5));
+        assertThat(0.5, is(roundToNearestPointZeroFive(0.5)));
     }
 
     @Test
@@ -75,4 +75,10 @@ public class TestRoundValueGenerator {
     {
         assertEquals(0.55,roundToNearestPointZeroFive(0.55));
     }
+
+    private double roundToNearestPointZeroFive(double numberForRounding)
+    {
+        return new RoundValueGenerator().roundToNearestDecimalFive(numberForRounding);
+    }
+
 }
