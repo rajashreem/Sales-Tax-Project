@@ -20,6 +20,7 @@ public class FileInputSplitter
     ReadFile reader = new ReadFile();
     private final ItemNameGenerator itemNameGenerator = new ItemNameGenerator();
     RoundValueGenerator rounder = new RoundValueGenerator();
+    ImportedOrNot importStatus = new ImportedOrNot();
     Item item;
 
 
@@ -31,6 +32,7 @@ public class FileInputSplitter
         ArrayList<String> itemsList = reader.readFileOfItems(fileName);
         for(String line : itemsList)
         {
+            boolean isImported;
             String[] result = line.split(" ");
             int quantity = Integer.parseInt(result[0]);
             String itemName = itemNameGenerator.findItem(line);
@@ -40,44 +42,21 @@ public class FileInputSplitter
 
             if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
             {
-                if(itemName.contains("import"))
-                {
-                    item = new TaxableItem(itemName, price, quantity, true);
-                    System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
-                    totalTaxOfAllItems += item.calculateTax();
-                    totalCostOfAllItems += item.calculateTotalCostAfterTax();
-                }
-                else
-                {
-                    item = new TaxableItem(itemName, price, quantity, false);
-                    System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
-                    totalTaxOfAllItems += item.calculateTax();
-                    totalCostOfAllItems += item.calculateTotalCostAfterTax();
-
-                }
+                isImported = importStatus.isImported(itemName);
+                item = new TaxableItem(itemName, price, quantity, isImported);
+                System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
+                totalTaxOfAllItems += item.calculateTax();
+                totalCostOfAllItems += item.calculateTotalCostAfterTax();
 
             }
             else
             {
-                if(itemName.contains("import"))
-                {
-                    item = new NonTaxableItem(itemName, price, quantity, true);
-                    System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
-                    totalTaxOfAllItems += item.calculateTax();
-                    totalCostOfAllItems += item.calculateTotalCostAfterTax();
-                }
-                else
-                {
-                    item = new NonTaxableItem(itemName, price, quantity, false);
-                    System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
-                    totalTaxOfAllItems += item.calculateTax();
-                    totalCostOfAllItems += item.calculateTotalCostAfterTax();
-
-                }
+                isImported = importStatus.isImported(itemName);
+                item = new NonTaxableItem(itemName, price, quantity, isImported);
+                System.out.println(line + " will cost -: " + item.calculateTotalCostAfterTax());
+                totalTaxOfAllItems += item.calculateTax();
+                totalCostOfAllItems += item.calculateTotalCostAfterTax();
             }
-
-
-
         }
 
         System.out.println("total tax is :" + rounder.roundToTwoDecimalPlaces(totalTaxOfAllItems));
