@@ -1,5 +1,7 @@
 package main;
 
+import java.io.IOException;
+
 /**
  * Created by IntelliJ IDEA.
  * User: rajashre
@@ -8,11 +10,8 @@ package main;
  * To change this template use File | Settings | File Templates.
  */
 public class Application {
-    public static void main(String[] args) throws WrongInputException
-    {
-        Item item = item = new TaxableItem("perfume", 18.99, 1, false);
-
-        double cost = item.calculateTotalCostAfterTax();
-        System.out.println("\n cost of item " + item.itemName +" after tax is :"+ cost);
+    public static void main(String[] args) throws WrongInputException, IOException {
+        FileInputSplitter i = new FileInputSplitter();
+        i.createItemListFromFile("ItemList.txt");
     }
 }

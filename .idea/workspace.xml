@@ -15,8 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d73098e9-c0a9-4a38-9fd1-94523b487914" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/TestTaxableItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Item.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ItemList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/FileInputSplitter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/ImportedOrNot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/ItemNameGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/ReadFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/TestReadFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Application.java" afterPath="$PROJECT_DIR$/src/main/Application.java" />
     </list>
     <ignored path="Sales-Tax-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,25 +85,7 @@
       <file leaf-file-name="TestNonTaxableItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestNonTaxableItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="41" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.32692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/TestItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="0" selection-end="1018" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestTaxableItem.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/TestTaxableItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.90710384">
+            <state line="64" column="23" selection-start="2070" selection-end="2070" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,10 +93,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ItemList.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ItemList.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="37" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="62" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+            <state line="14" column="46" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadFile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ReadFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileInputSplitter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/FileInputSplitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="97" selection-start="2288" selection-end="2288" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportedOrNot.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/ImportedOrNot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="43" selection-start="296" selection-end="296" vertical-scroll-proportion="0.55737704">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemNameGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ItemNameGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="99" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,55 +154,26 @@
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+            <state line="76" column="102" selection-start="2223" selection-end="2321" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaxableItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/TaxableItem.java">
+      <file leaf-file-name="TestReadFile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/TestReadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+            <state line="20" column="47" selection-start="0" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NonTaxableItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/NonTaxableItem.java">
+      <file leaf-file-name="Item.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Item.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
+            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WrongInputException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/WrongInputException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="37" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckStringInput.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/CheckStringInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="52" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRoundValueGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="29" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,21 +192,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/SalesTaxTest.java" />
-        <option value="$PROJECT_DIR$/src/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/calculateTaxTest.java" />
-        <option value="$PROJECT_DIR$/src/main/RoundValueGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/WrongInputException.java" />
         <option value="$PROJECT_DIR$/src/main/TaxableItem.java" />
         <option value="$PROJECT_DIR$/src/main/NonTaxableItem.java" />
         <option value="$PROJECT_DIR$/src/main/CheckStringInput.java" />
-        <option value="$PROJECT_DIR$/src/main/Application.java" />
         <option value="$PROJECT_DIR$/src/main/Item.java" />
         <option value="$PROJECT_DIR$/src/test/TestItem.java" />
         <option value="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
         <option value="$PROJECT_DIR$/src/test/TestNonTaxableItem.java" />
         <option value="$PROJECT_DIR$/src/test/TestTaxableItem.java" />
+        <option value="$PROJECT_DIR$/Item.txt" />
+        <option value="$PROJECT_DIR$/src/test/TestReadFile.java" />
+        <option value="$PROJECT_DIR$/src/main/ItemCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/ReadFile.java" />
+        <option value="$PROJECT_DIR$/ItemList.txt" />
+        <option value="$PROJECT_DIR$/src/main/FileInputSplitter.java" />
+        <option value="$PROJECT_DIR$/src/main/ImportedOrNot.java" />
       </list>
     </option>
   </component>
@@ -310,7 +320,12 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TestTaxableItem">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
     <configuration default="false" name="TestNonTaxableItem" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -632,7 +647,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.671521" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -641,7 +656,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495935" sideWeight="0.671521" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -695,32 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_25/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="534" column="19" selection-start="26164" selection-end="26164" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://E:/projects/projects/shopping-cart/shopping-cart/Shopping-cart.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/RoundValueGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="4" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/WrongInputException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="29" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
@@ -744,30 +733,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/CheckStringInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="52" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestNonTaxableItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.32692307">
           <folding />
         </state>
       </provider>
@@ -781,10 +749,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestTaxableItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.90710384">
+        <state line="22" column="0" selection-start="387" selection-end="628" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestNonTaxableItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="23" selection-start="2070" selection-end="2070" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="47" selection-start="0" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Item.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="46" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ItemNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="99" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="102" selection-start="2223" selection-end="2321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/FileInputSplitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="97" selection-start="2288" selection-end="2288" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ImportedOrNot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="43" selection-start="296" selection-end="296" vertical-scroll-proportion="0.55737704">
+          <folding />
         </state>
       </provider>
     </entry>
