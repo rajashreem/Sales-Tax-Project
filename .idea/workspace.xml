@@ -15,7 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d73098e9-c0a9-4a38-9fd1-94523b487914" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" afterPath="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/CheckStringInput.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/TaxableItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/WrongInputException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sales-Tax-project.iml" afterPath="$PROJECT_DIR$/Sales-Tax-project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Item.java" afterPath="$PROJECT_DIR$/src/main/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestCalculateTax.java" afterPath="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
     </list>
     <ignored path="Sales-Tax-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +83,20 @@
       <file leaf-file-name="TestCalculateTax.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="77" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/TestItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#TestItem#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,16 +122,43 @@
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+            <state line="14" column="37" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRoundValueGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TaxableItem.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/TaxableItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.11950791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WrongInputException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/WrongInputException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="37" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckStringInput.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/CheckStringInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="9" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRoundValueGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="299" selection-end="299" vertical-scroll-proportion="0.4818653">
+            <state line="35" column="29" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +184,14 @@
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/test/calculateTaxTest.java" />
         <option value="$PROJECT_DIR$/src/main/RoundValueGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/Item.java" />
         <option value="$PROJECT_DIR$/src/main/Application.java" />
-        <option value="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
         <option value="$PROJECT_DIR$/src/test/TestRoundValueGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/TestItem.java" />
+        <option value="$PROJECT_DIR$/src/main/CheckStringInput.java" />
+        <option value="$PROJECT_DIR$/src/main/WrongInputException.java" />
+        <option value="$PROJECT_DIR$/src/test/TestCalculateTax.java" />
+        <option value="$PROJECT_DIR$/src/main/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/TaxableItem.java" />
       </list>
     </option>
   </component>
@@ -242,6 +291,7 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
@@ -254,7 +304,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="TestNG.TestCalculateTax">
+  <component name="RunManager" selected="JUnit.TestItem">
     <configuration default="false" name="SalesTaxTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="Sales-Tax-project" />
@@ -366,6 +416,34 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Sales-Tax-project" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestItem" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Sales-Tax-project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestItem" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -493,11 +571,12 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SalesTaxTest" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.TestCalculateTax" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.TestRoundValueGenerator" />
       <item index="3" class="java.lang.String" itemvalue="Application.Application" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestItem" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -550,7 +629,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495935" sideWeight="0.671521" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -624,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/RoundValueGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="4" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
@@ -638,19 +710,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/WrongInputException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="37" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CheckStringInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="9" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestCalculateTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="77" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestRoundValueGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="299" selection-end="299" vertical-scroll-proportion="0.4818653">
+        <state line="35" column="29" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#TestItem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/TaxableItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.11950791">
+          <folding />
         </state>
       </provider>
     </entry>

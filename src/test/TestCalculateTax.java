@@ -16,6 +16,7 @@ public class TestCalculateTax {
     @Test
     public void costOfOneBookWithPriceTenIsTen() throws Exception
     {
+
         assertEquals(10.0,calculateTotalCostOfItem("book",1,10.0));
     }
 
