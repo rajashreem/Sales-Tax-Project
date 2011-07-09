@@ -8,12 +8,14 @@ package main;
  * To change this template use File | Settings | File Templates.
  */
 public class CheckStringInput {
-    private static boolean inputResult = true;
+    //private static boolean inputResult = true;
     public static boolean isStringEmpty(String input)
     {
-         if(input==null || input.length()==0)
-             inputResult = false;
-         return inputResult;
+        return input == null || input.length() == 0;
+//    {
+//         if(input == null || input.length()==0)
+//             inputResult = false;
+//         return inputResult;
     }
 
 }

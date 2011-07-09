@@ -8,12 +8,11 @@ package main;
  * To change this template use File | Settings | File Templates.
  */
 public class Application {
-    public static void main(String[] args)
+    public static void main(String[] args) throws WrongInputException
     {
-        Item item = new Item();
-        RoundValueGenerator round = new RoundValueGenerator();
-        double finalCost = 0.0;
-        finalCost = item.calculateCostAfterTax("imported_chocolate", 1, 11.25);
-        System.out.println("\ncost after tax is :"+finalCost);
+        Item item = item = new TaxableItem("perfume", 18.99, 1, false);
+
+        double cost = item.calculateTotalCostAfterTax();
+        System.out.println("\n cost of item " + item.itemName +" after tax is :"+ cost);
     }
 }

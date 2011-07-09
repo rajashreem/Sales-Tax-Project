@@ -11,13 +11,13 @@ package main;
 
 public abstract class Item {
 
-    private String itemName;
-    private double price;
-    private int quantity;
+    protected String itemName;
+    protected double price;
+    protected int quantity;
     protected boolean isImported = false;
 
-    private double plainCost;
-    private double totalCost;
+    public double plainCost;
+    public double totalCost;
 
     public Item(String itemName, double price, int quantity, boolean isImported) throws WrongInputException
     {
