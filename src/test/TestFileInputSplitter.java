@@ -53,7 +53,7 @@ public class TestFileInputSplitter
 
         FileInputSplitter splitter = new FileInputSplitter();
         splitter.splitItemListFromFile(fileName);
-        assertThat(1.5 ,is(splitter.totalTaxOfAllItems));
+        assertThat(1.5 , is(splitter.totalTaxOfAllItems));
         assertThat(16.49 ,is(splitter.totalCostOfAllItems));
 
     }

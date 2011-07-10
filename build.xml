@@ -1,0 +1,43 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="build-testing" default="cucumber" basedir=".">
+    <property name="jruby.home" value="${basedir}/lib/cuke4duke/.jruby"/>
+    <target name="-compile-steps" depends="-define-paths,clean">
+        <mkdir dir="target/test-classes"/>
+		<javac srcdir="src" includes="**/*.java" includeantruntime="false" destdir="target/test-classes"
+               classpathref="compile.classpath" encoding="UTF-8"/>
+
+    </target>
+    <target name="cucumber" depends="-compile-steps" description="Run Cucumber">
+        <mkdir dir="target/junit-report"/>
+        <taskdef name="cucumber" classname="cuke4duke.ant.CucumberTask" classpathref="compile.classpath"/>
+        <cucumber
+                args="--verbose --require target/test-classes  --color --format pretty --format junit --out target/junit-report features"
+                objectFactory="pico">
+            <classpath>
+                <pathelement location="target/test-classes"/>
+            </classpath>
+        </cucumber>
+    </target>
+
+    <target name="-define-paths">
+        <path id="jruby.classpath">
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+        </path>
+        <path id="compile.classpath">
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+
+        </path>
+    </target>
+    <target name="clean" description="Delete all generated artifacts">
+        <delete dir="${basedir}/target/test-classes"/>
+    </target>
+    <target name="clean-deps" description="Delete all dependencies">
+        <delete dir="${basedir}/lib/.jruby"/>
+        <delete>
+            <fileset dir="${basedir}/lib" includes=".jar"/>
+        </delete>
+    </target>
+</project>
