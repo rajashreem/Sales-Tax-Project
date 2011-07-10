@@ -10,6 +10,7 @@ package main;
  */
 
 public abstract class Item {
+    RoundValueGenerator rounder = new RoundValueGenerator();
 
     protected String itemName;
     protected double price;
@@ -39,7 +40,6 @@ public abstract class Item {
     public double calculatePlainCost()
     {
         plainCost = price * quantity;
-        RoundValueGenerator rounder = new RoundValueGenerator();
         plainCost = rounder.roundToTwoDecimalPlaces(plainCost);
         return plainCost;
     }
@@ -47,44 +47,9 @@ public abstract class Item {
     public double calculateTotalCostAfterTax()
     {
         double tax = calculateTax();
-        RoundValueGenerator rounder = new RoundValueGenerator();
         totalCost = calculatePlainCost() + calculateTax();
         totalCost = rounder.roundToTwoDecimalPlaces(totalCost);
         return totalCost;
     }
 
 }
-//    {
-//        double tax = 0.0;
-//        double roundedTax = 0.0;
-//        double totalTax = 0.0;
-//        double cost = 0.0;
-//        RoundValueGenerator rounder = new RoundValueGenerator();
-//
-//        cost = price * quantity;
-//        System.out.println("actual price:"+cost);
-//
-//        if(itemName.contains("import"))
-//        {
-//          tax = 0.05 * price * quantity;
-//          roundedTax = rounder.roundToNearestDecimalFive(tax);
-//          System.out.println("Tax because of import is:"+roundedTax);
-//          cost += roundedTax;
-//          totalTax += roundedTax;
-//          tax = 0.0;
-//        }
-//
-//        if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
-//        {
-//            tax = 0.1 * price * quantity;
-//            roundedTax = rounder.roundToNearestDecimalFive(tax);
-//            System.out.println("Tax for non-exemptable:"+roundedTax);
-//            totalTax += roundedTax;
-//            cost += roundedTax;
-//        }
-//
-//        System.out.println("Total tax is:" + rounder.roundToTwoDecimalPlaces(totalTax));
-//        cost = rounder.roundToTwoDecimalPlaces(cost);
-//        return cost;
-//    }
-

@@ -4,7 +4,7 @@ public class ItemNameGenerator {
     public ItemNameGenerator() {
     }
 
-    String findItem(String line) {
+    public String findItem(String line) {
         String itemName = "";
         String[] result = line.split(" ");
         for (int i = 1; i < (result.length - 2); i++)
