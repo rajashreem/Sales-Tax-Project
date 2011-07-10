@@ -30,7 +30,6 @@ public class FileInputSplitter
         ArrayList<String> itemsList = reader.readFileOfItems(fileName);
         for(String line : itemsList)
         {
-            boolean isImported;
             String[] result = line.split(" ");
             quantity = Integer.parseInt(result[0]);
             itemName = itemNameGenerator.findItem(line);
@@ -45,18 +44,18 @@ public class FileInputSplitter
 
     private void createItemObjects(String line) throws WrongInputException
     {
-        boolean isImported;
+        boolean isImportedOrNot;
         if(!(itemName.contains("book")||itemName.contains("pills")||itemName.contains("chocolate")))
         {
-            isImported = ImportedOrNot.isImported(itemName);
-            item = new TaxableItem(itemName, price, quantity, isImported);
+            isImportedOrNot = ImportedOrNot.isImported(itemName);
+            item = new TaxableItem(itemName, price, quantity, isImportedOrNot);
             taxAndCostCalculator(line, item);
 
         }
         else
         {
-            isImported = ImportedOrNot.isImported(itemName);
-            item = new NonTaxableItem(itemName, price, quantity, isImported);
+            isImportedOrNot = ImportedOrNot.isImported(itemName);
+            item = new NonTaxableItem(itemName, price, quantity, isImportedOrNot);
             taxAndCostCalculator(line, item);
         }
     }
